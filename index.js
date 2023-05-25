@@ -2,9 +2,12 @@ require("dotenv").config();
 const fs = require("fs");
 const login = require("fb-chat-api");
 const { isExist } = require("./functions/helper");
+const path = require("path");
 
 const loginCred = {
-  appState: JSON.parse(fs.readFileSync("session.json", "utf-8")),
+  appState: JSON.parse(
+    fs.readFileSync(path.join(__dirname, "session.json"), "utf-8")
+  ),
 };
 
 // let running = false;
