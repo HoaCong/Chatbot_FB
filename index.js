@@ -2,14 +2,10 @@ require("dotenv").config();
 const login = require("fb-chat-api");
 const session = require("./session.json");
 const { isExist } = require("./functions/helper");
-
 const loginCred = {
   appState: session,
 };
 
-function handleGroup(api, event) {
-  console.log(event);
-}
 function handleOther(api, event) {
   try {
     if (event.body === "/help") {
@@ -66,9 +62,8 @@ function start() {
           start();
           return;
         }
-        if (event.type === "message") {
-          if (!event.isGroup) handleOther(api, event);
-          else handleGroup(api, event);
+        if (event.type === "message" && !event.isGroup) {
+          handleOther(api, event);
         }
       } catch (err) {
         console.err(err);
