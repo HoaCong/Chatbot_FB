@@ -10,13 +10,13 @@
     "process": "^0.11.10",
     "dotenv": "^16.0.3"
   },
-  "name": "messenger-openai",
+  "name": "chatbot-fb",
   "description": "",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start": "node index.js"
   },
   "author": "Hát.ò.a",
   "license": "ISC"
