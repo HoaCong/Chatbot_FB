@@ -4,10 +4,121 @@ const login = require("fb-chat-api");
 const { isExist } = require("./functions/helper");
 const path = require("path");
 
+// const loginCred = {
+//   appState: JSON.parse(
+//     fs.readFileSync(path.join(__dirname, "session.json"), "utf-8")
+//   ),
+// };
+
 const loginCred = {
-  appState: JSON.parse(
-    fs.readFileSync(path.join(__dirname, "session.json"), "utf-8")
-  ),
+  appState: [
+    {
+      domain: ".facebook.com",
+      expirationDate: 1719506690.543207,
+      hostOnly: false,
+      httpOnly: true,
+      key: "datr",
+      path: "/",
+      sameSite: "no_restriction",
+      secure: true,
+      session: false,
+      storeId: null,
+      value: "Q63rYOmMl-J_iaA8U7xEzTV-",
+    },
+    {
+      domain: ".facebook.com",
+      expirationDate: 1692761062.350747,
+      hostOnly: false,
+      httpOnly: true,
+      key: "fr",
+      path: "/",
+      sameSite: "no_restriction",
+      secure: true,
+      session: false,
+      storeId: null,
+      value:
+        "0yh5ExeEcDYpDsprs.AWWVX5JhYzo-tR7BImIBPkl8dog.BkbtTj.Ch.AAA.0.0.BkbtTj.AWWXC49amyY",
+    },
+    {
+      domain: ".facebook.com",
+      expirationDate: 1716521063.350719,
+      hostOnly: false,
+      httpOnly: true,
+      key: "xs",
+      path: "/",
+      sameSite: "no_restriction",
+      secure: true,
+      session: false,
+      storeId: null,
+      value:
+        "9%3ARZPcJllrU8vXNQ%3A2%3A1684946693%3A-1%3A7513%3A%3AAcWtQDtjLVUIbmJEzRhdpyXhRJLUcuOqzF-18pq0sw",
+    },
+    {
+      domain: ".facebook.com",
+      expirationDate: 1716521063.350673,
+      hostOnly: false,
+      httpOnly: false,
+      key: "c_user",
+      path: "/",
+      sameSite: "no_restriction",
+      secure: true,
+      session: false,
+      storeId: null,
+      value: "100009493838168",
+    },
+    {
+      domain: ".facebook.com",
+      hostOnly: false,
+      httpOnly: false,
+      key: "presence",
+      path: "/",
+      sameSite: null,
+      secure: true,
+      session: true,
+      storeId: null,
+      value:
+        "C%7B%22t3%22%3A%5B%5D%2C%22utc3%22%3A1684985066403%2C%22v%22%3A1%7D",
+    },
+    {
+      domain: ".facebook.com",
+      expirationDate: 1685157894,
+      hostOnly: false,
+      httpOnly: false,
+      key: "dpr",
+      path: "/",
+      sameSite: "no_restriction",
+      secure: true,
+      session: false,
+      storeId: null,
+      value: "1",
+    },
+    {
+      domain: ".facebook.com",
+      expirationDate: 1719506700.311024,
+      hostOnly: false,
+      httpOnly: true,
+      key: "sb",
+      path: "/",
+      sameSite: "no_restriction",
+      secure: true,
+      session: false,
+      storeId: null,
+      value: "Q63rYFfnbgixBtI562d7Eit7",
+    },
+    {
+      domain: ".facebook.com",
+      expirationDate: 1685589863,
+      hostOnly: false,
+      httpOnly: false,
+      key: "wd",
+      path: "/",
+      sameSite: "lax",
+      secure: true,
+      session: false,
+      storeId: null,
+      value: "1920x929",
+    },
+  ],
 };
 
 // let running = false;
