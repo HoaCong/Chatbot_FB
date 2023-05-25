@@ -17,30 +17,18 @@ No need to install modules, required modules are already installed.
 <br>
 Get your fb login cookie and paste it inside session.json
 
-`git clone https://github.com/suff3r1ng/messenger-openai.git`
-<br>
-`cd messenger-openai`
-<br>
-`node execute.js`
-<br>
-
 ## Usage
 
 Functions:<br>
 
 `/help - show list of commands to trigger the bot`<br>
-`/forecast 'iNPUT CITY NAME'- show weather forecast.`<br>
-`/weather 'INPUT CITY NAME'- show current weather`<br>
 `/img 'ANY COMMANDS eg. image of a pug'- Generate an image`<br>
-`/ai 'YOUR QUESTION'- Ask the AI gpt-3.5-turbo-0301  `<br>
-`/stop - Stop`<br>
-`/continue - continue the ai`<br>
+`/ai 'YOUR QUESTION'- Ask the AI gpt-3.5-turbo`<br>
 
 ## Changelogs:
 
-Added weather.<br>
 Added image generator.<br>
-Updated to model gpt-3.5-turbo-0301.<br>
+Updated to model gpt-3.5-turbo<br>
 Added Message History of up to 10 messages only to save tokens for the api.<br>
 
 ## Credits
