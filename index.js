@@ -1,6 +1,6 @@
 require("dotenv").config();
 const login = require("fb-chat-api");
-const session = require("./session.json");
+// const session = require("./session.json");
 const { isExist } = require("./functions/helper");
 const loginCred = {
   appState: [
